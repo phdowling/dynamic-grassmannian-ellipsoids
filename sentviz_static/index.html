@@ -1,0 +1,51 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<script type="text/javascript" src="static/script.js"></script>
+<body>
+<div class="wrap">
+    <div class="search">
+        <input type="text" class="searchTerm" id="textbox" placeholder="Enter a sentence to visualize">
+
+        <button type="submit" class="searchButton" onclick="doEmbed()" id="embedButton">
+            <i class="fa fa-arrow-right "></i>
+        </button>
+        <button type="submit" class="searchButton" onclick="doSimpleSearch()" id="simpleSearchButton">
+            <i class="fa fa-search "></i>
+        </button>
+        <button type="submit" class="searchButton" onclick="doTopicSearch()" id="topicSearchButton">
+            <i class="fa fa-search "></i>
+        </button>
+
+        <button type="submit" class="searchButton" onclick="doWeightedTopicSearch()" id="weightSearchButton">
+            <i class="fa fa-search "></i>
+        </button>
+
+    </div>
+
+</div>
+
+<div>
+    <div id="wordVizArea">
+    </div>
+    <div id="vizControlsArea">
+    </div>
+</div>
+<div class="column1" id="simpleSearchContainer">
+    <div class="searchresult">
+        
+    </div>
+</div>
+<div class="column2" id="topicSearchContainer">
+    <div class="searchresult">
+        
+    </div>
+</div>
+
+</body>
+
+</html>
